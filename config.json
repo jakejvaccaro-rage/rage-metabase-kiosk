@@ -1,0 +1,42 @@
+{
+  "defaults": {
+    "durationSeconds": 60
+  },
+  "dashboards": [
+    {
+      "title": "Metabase Dashboard 1",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/ea497326-d6d7-4bb8-ad38-d21603de8da8",
+      "accent": "#2f7d80"
+    },
+    {
+      "title": "Metabase Dashboard 2",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/963acd45-ac52-4b1a-b5dc-517f5bd77ac7",
+      "accent": "#8a6f2a"
+    },
+    {
+      "title": "Metabase Dashboard 3",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/e79528c3-b634-4416-a03d-e8fcca48569b",
+      "accent": "#986044"
+    },
+    {
+      "title": "Metabase Dashboard 4",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/107d9f7e-1e7b-4ca5-b855-1154719b5dec",
+      "accent": "#4f6f52"
+    },
+    {
+      "title": "Metabase Dashboard 5",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/4cfccfcd-8472-4bfb-976a-d094c9681c18",
+      "accent": "#785d8b"
+    },
+    {
+      "title": "Metabase Dashboard 6",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/cfbb24fe-fc5a-45c5-88df-21f1fbc89732",
+      "accent": "#b36b45"
+    },
+    {
+      "title": "Metabase Dashboard 7",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/023431fb-2f11-4ec9-bb0b-e6394cd50c3b",
+      "accent": "#496b8f"
+    }
+  ]
+}

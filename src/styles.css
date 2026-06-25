@@ -1,0 +1,270 @@
+:root {
+  --background: #11100e;
+  --foreground: #f4efe7;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: var(--background);
+}
+
+button,
+iframe {
+  font: inherit;
+}
+
+.tv-shell {
+  --accent: #2f7d80;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(17, 16, 14, 0.78), transparent 22%),
+    linear-gradient(0deg, rgba(17, 16, 14, 0.86), transparent 26%),
+    #11100e;
+}
+
+.dashboard-stage {
+  position: absolute;
+  inset: 0;
+  background: #f4efe7;
+}
+
+.dashboard-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #f4efe7;
+}
+
+.top-overlay,
+.bottom-overlay {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  pointer-events: none;
+}
+
+.top-overlay {
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  justify-content: space-between;
+}
+
+.bottom-overlay {
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+}
+
+.top-overlay > div:first-child,
+.clock,
+.slide-count,
+.controls {
+  border: 1px solid rgba(244, 239, 231, 0.2);
+  background: rgba(17, 16, 14, 0.72);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(12px);
+}
+
+.top-overlay > div:first-child {
+  min-width: min(520px, calc(100vw - 150px));
+  max-width: 70vw;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 12px 16px 14px;
+}
+
+.eyebrow {
+  margin: 0 0 3px;
+  color: rgba(244, 239, 231, 0.68);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.top-overlay h1 {
+  margin: 0;
+  overflow: hidden;
+  color: #fffaf1;
+  font-size: 26px;
+  font-weight: 760;
+  line-height: 1.05;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.clock {
+  min-width: 88px;
+  border-radius: 8px;
+  padding: 13px 15px;
+  color: #fffaf1;
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 760;
+  text-align: center;
+}
+
+.slide-count {
+  display: flex;
+  align-items: baseline;
+  min-width: 74px;
+  height: 44px;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fffaf1;
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 760;
+}
+
+.slide-count span {
+  margin: 0 3px;
+  color: rgba(244, 239, 231, 0.5);
+  font-size: 13px;
+}
+
+.progress-track {
+  position: relative;
+  flex: 1;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(17, 16, 14, 0.52);
+  outline: 1px solid rgba(244, 239, 231, 0.16);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width 180ms linear;
+}
+
+.controls {
+  display: flex;
+  height: 44px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  padding: 4px;
+  pointer-events: auto;
+}
+
+.controls button {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #fffaf1;
+  cursor: pointer;
+}
+
+.controls button:hover,
+.controls button:focus-visible {
+  background: rgba(244, 239, 231, 0.14);
+  outline: none;
+}
+
+.control-icon,
+.control-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.control-icon svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+@media (max-width: 800px) {
+  .top-overlay,
+  .bottom-overlay {
+    left: 10px;
+    right: 10px;
+  }
+
+  .top-overlay {
+    top: 10px;
+  }
+
+  .bottom-overlay {
+    bottom: 10px;
+    gap: 10px;
+  }
+
+  .top-overlay > div:first-child {
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+    padding: 10px 12px;
+  }
+
+  .top-overlay h1 {
+    font-size: 19px;
+  }
+
+  .clock {
+    min-width: 74px;
+    padding: 11px 10px;
+    font-size: 16px;
+  }
+
+  .slide-count {
+    min-width: 54px;
+  }
+
+  .controls {
+    gap: 2px;
+  }
+
+  .controls button {
+    width: 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .bottom-overlay {
+    flex-wrap: wrap;
+  }
+
+  .progress-track {
+    order: -1;
+    flex-basis: 100%;
+  }
+
+  .controls {
+    margin-left: auto;
+  }
+}
