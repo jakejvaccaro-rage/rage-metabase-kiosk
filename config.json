@@ -1,42 +1,42 @@
 {
   "defaults": {
-    "durationSeconds": 60
+    "durationSeconds": 45
   },
   "dashboards": [
     {
-      "title": "Metabase Dashboard 1",
+      "title": "BIRR 2026",
       "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/ea497326-d6d7-4bb8-ad38-d21603de8da8",
-      "accent": "#2f7d80"
+      "accent": "#0e7500"
     },
     {
-      "title": "Metabase Dashboard 2",
+      "title": "Operations - Promised Date",
       "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/963acd45-ac52-4b1a-b5dc-517f5bd77ac7",
-      "accent": "#8a6f2a"
+      "accent": "#2d37fa"
     },
     {
-      "title": "Metabase Dashboard 3",
-      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/e79528c3-b634-4416-a03d-e8fcca48569b",
-      "accent": "#986044"
-    },
-    {
-      "title": "Metabase Dashboard 4",
+      "title": "YTD Bookings",
       "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/107d9f7e-1e7b-4ca5-b855-1154719b5dec",
-      "accent": "#4f6f52"
+      "accent": "#2ddbfa"
     },
     {
-      "title": "Metabase Dashboard 5",
-      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/4cfccfcd-8472-4bfb-976a-d094c9681c18",
-      "accent": "#785d8b"
+      "title": "Stock List",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/e79528c3-b634-4416-a03d-e8fcca48569b",
+      "accent": "#f3fa2d"
     },
     {
-      "title": "Metabase Dashboard 6",
-      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/cfbb24fe-fc5a-45c5-88df-21f1fbc89732",
-      "accent": "#b36b45"
+      "title": "Aircall Summary",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/7fe68cc1-a9a9-41d3-8322-650a890ac8e1",
+      "accent": "#4ffa2d"
     },
     {
-      "title": "Metabase Dashboard 7",
-      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/023431fb-2f11-4ec9-bb0b-e6394cd50c3b",
-      "accent": "#496b8f"
+      "title": "Territory Performance",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/9d0f05f5-5c3e-4adf-844d-50c719c15104",
+      "accent": "#fa2d5d"
+    },
+    {
+      "title": "Opporitunity Map",
+      "url": "https://hidden-skipper.metabaseapp.com/public/dashboard/0a8d4ab3-5660-48aa-906f-67bb27aec146",
+      "accent": "#fa592d"
     }
   ]
 }
